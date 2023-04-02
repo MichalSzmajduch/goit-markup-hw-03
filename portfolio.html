@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,32 +20,45 @@
     />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
-  <body class="bodystyle">
-    <header>
-      <a href="#" class="contact header-logo"
+  <body class="bodystyle container">
+    <header class="header-box">
+      <a href="#" class="contact header-logo logo-box"
         ><span class="logo-color">Web</span>Studio</a
       >
       <nav>
-        <ul>
+        <ul class="nav-box">
           <li>
-            <a href="./index.html" class="contact header-link">Agencja</a>
+            <a href="./index.html" class="contact header-link nav-space"
+              >Agencja</a
+            >
           </li>
           <li>
-            <a href="./portfolio.html" class="contact header-link">Portfolio</a>
+            <a href="./portfolio.html" class="contact header-link nav-space"
+              >Portfolio</a
+            >
           </li>
-          <li><a href="#" class="contact header-link">Kontakt</a></li>
+          <li>
+            <a href="#" class="contact header-link nav-space">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com" class="contact header-contact"
-        >info@devstudio.com</a
-      >
-      <a href="tel:48111111111" class="contact header-contact"
-        >+48 111 111 111</a
-      >
+      <ul class="contact-box">
+        <li class="contact-space">
+          <a href="mailto:info@devstudio.com" class="contact header-contact"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:48111111111" class="contact header-contact"
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
     </header>
+
     <main>
-      <div>
-        <ul>
+      <div class="main-box">
+        <ul class="button-box">
           <li>
             <button type="button" class="button portfolio-button">
               Wszystkie
@@ -65,109 +85,109 @@
             </button>
           </li>
         </ul>
-      </div>
-      <section>
-        <ul>
-          <li>
-            <img
-              src="./images/laptop.jpg"
-              alt="laptop"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Technocrack</h2>
-            <p class="portfolio-description">Strona internetowa</p>
-          </li>
-          <li>
-            <img
-              src="./images/basketball.jpg"
-              alt="dwóch graczy koszykóki"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Grafika New Orlean vs Golden Star</h2>
-            <p class="portfolio-description">Dizajn</p>
-          </li>
-          <li>
-            <img
-              src="./images/seafood.jpg"
-              alt="logo restauracji seafood"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Restauracja Seafood</h2>
-            <p class="portfolio-description">Aplikacja</p>
-          </li>
-          <li>
-            <img
-              src="./images/sluchawki.jpg"
-              alt="słuchawki"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Projekt Prime</h2>
-            <p class="portfolio-description">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/projektboxes.jpg"
-              alt="dwa kartoniki"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Projekt Boxes</h2>
-            <p class="portfolio-description">Aplikacja</p>
-          </li>
-          <li>
-            <img
-              src="./images/monitor.jpg"
-              alt="monitor"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Inspiration has no Borders</h2>
-            <p class="portfolio-description">Strona internetowa</p>
-          </li>
-          <li>
-            <img
-              src="./images/magazyn.jpg"
-              alt="gazetka"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Magazyn Limited Edition</h2>
-            <p class="portfolio-description">Dizajn</p>
-          </li>
-          <li>
-            <img
-              src="./images/projectlab.jpg"
-              alt="projekt lab"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio">Projekt Lab</h2>
-            <p class="portfolio-description">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/growingbusines.jpg"
-              alt="praca na laptopie"
-              width="370"
-              height="294"
-            />
+        <div>
+          <ul class="img-main-box">
+            <li>
+              <img
+                src="./images/laptop.jpg"
+                alt="laptop"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Technocrack</h2>
+              <p class="portfolio-description">Strona internetowa</p>
+            </li>
+            <li>
+              <img
+                src="./images/basketball.jpg"
+                alt="dwóch graczy koszykóki"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Grafika New Orlean vs Golden Star</h2>
+              <p class="portfolio-description">Dizajn</p>
+            </li>
+            <li>
+              <img
+                src="./images/seafood.jpg"
+                alt="logo restauracji seafood"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Restauracja Seafood</h2>
+              <p class="portfolio-description">Aplikacja</p>
+            </li>
+            <li>
+              <img
+                src="./images/sluchawki.jpg"
+                alt="słuchawki"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Projekt Prime</h2>
+              <p class="portfolio-description">Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/projektboxes.jpg"
+                alt="dwa kartoniki"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Projekt Boxes</h2>
+              <p class="portfolio-description">Aplikacja</p>
+            </li>
+            <li>
+              <img
+                src="./images/monitor.jpg"
+                alt="monitor"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Inspiration has no Borders</h2>
+              <p class="portfolio-description">Strona internetowa</p>
+            </li>
+            <li>
+              <img
+                src="./images/magazyn.jpg"
+                alt="gazetka"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Magazyn Limited Edition</h2>
+              <p class="portfolio-description">Dizajn</p>
+            </li>
+            <li>
+              <img
+                src="./images/projectlab.jpg"
+                alt="projekt lab"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio">Projekt Lab</h2>
+              <p class="portfolio-description">Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/growingbusines.jpg"
+                alt="praca na laptopie"
+                width="370"
+                height="294"
+              />
 
-            <h2 class="portfolio">Growing Business</h2>
-            <p class="portfolio-description">Aplikacja</p>
-          </li>
-        </ul>
-      </section>
+              <h2 class="portfolio">Growing Business</h2>
+              <p class="portfolio-description">Aplikacja</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
-    <footer class="footer-background">
-      <a href="./index.html" class="contact footer-logo"
+    <footer class="footer-background footer-box">
+      <a href="./index.html" class="contact footer-logo logo-box-footer"
         ><span class="logo-color">Web</span>Studio</a
       >
       <address>
-        <ul>
+        <ul class="footer-link">
           <li>
             <a
               href="address:m.Warszawa,AlejeJerozolimskie21"
