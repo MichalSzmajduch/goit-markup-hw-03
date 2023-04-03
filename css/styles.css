@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 1.46;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--third-text-color);
 }
 
 .button:hover,
@@ -27,6 +27,7 @@
   --third-text-color: #ffffff;
   --logo-color: #2196f3;
   --secondary-bacground-color: #2f303a;
+  --border-color: #ececec;
 }
 
 .header-logo {
@@ -70,7 +71,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  margin: 30px 700px 200px 700px;
 }
 .fourth-header {
   font-size: 14px;
@@ -133,23 +133,25 @@
 }
 
 .container {
-  width: 1600px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .logo-box {
   display: flex;
   flex-direction: row;
-  padding-left: 215px;
+
   box-sizing: content-box 145px 31px;
 }
 .header-box {
   display: flex;
   flex-direction: row;
-  box-sizing: content-box 1600px 80px;
+  box-sizing: content-box 1200px 80px;
+  border-bottom: solid 1px var(--border-color);
 }
 .nav-box {
   display: flex;
   flex-direction: row;
-  padding-left: 93px;
+  margin-left: 93px;
   box-sizing: content-box 261px 61px;
   gap: 46px;
   list-style-type: none;
@@ -157,24 +159,28 @@
 .contact-box {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 364px;
   gap: 50px;
   list-style-type: none;
+  box-sizing: content-box 295px 16px;
+  padding-left: 371px;
 }
-.nav-space {
-  padding-right: 46px;
-}
-.contact-space {
-  gap: 50px;
+.button-index {
+  display: block flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 500px 200px 500px;
 }
 
 .button-box {
   display: flex;
-  flex-direction: row;
+  width: 572px;
+  height: 54px;
+  margin: auto;
   list-style-type: none;
-  box-sizing: content-box 572px 54px;
-  gap: 30px;
-  margin: 94px 518px 34px 510px;
+  justify-content: center;
+  gap: 8px;
 }
 
 .main-container {
@@ -184,30 +190,30 @@
 }
 .img-main-box {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 34px 215px 94px 215px;
+  gap: 15px;
+  flex-basis: calc((100% - 30px) / 3);
 }
 .footer-box {
   display: block flex;
   flex-direction: row;
-  width: 1600px;
-  height: 252px;
+  margin-top: 94px;
 }
 .logo-box-footer {
   display: flex;
   flex-direction: row;
-
   padding-top: 60px;
-  padding-left: 215px;
+  margin: auto;
 }
 
 .main-box {
   display: flex;
   box-sizing: content-box 1170px 1360px;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .footer-link {
   list-style-type: none;
@@ -215,17 +221,21 @@
   flex-wrap: wrap;
   flex-direction: column;
   padding-top: 20px;
-  padding-left: 215px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  margin: auto;
 }
 .main-box-index {
   display: block flex;
-  width: 1600px;
+  flex-wrap: wrap;
   height: 600px;
 }
 .main-text-index {
-  box-sizing: content-box 696px 120px;
+  width: 696px;
+  height: 120px;
   display: block flex;
-  padding: 200px 452px 30px 452px;
+  margin: 0 auto;
+  padding-top: 200px;
   text-align: center;
 }
 .index-description {
@@ -234,34 +244,41 @@
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+  margin: 0 auto;
 }
 .description-box {
   width: 270px;
   height: 101px;
+  margin: 0 auto;
 }
 .sec-title {
+  margin: 0 auto;
+  text-align: center;
   padding-top: 94px;
-  padding-left: 624px;
 }
 .img-work {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  padding-left: 215px;
-  padding-top: 50px;
+  margin: 0 auto;
+  padding-top: 94px;
+  justify-content: right;
+  width: 1170px;
+  height: 386px;
 }
 .th-title {
-  padding-top: 188px;
-  padding-left: 695px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 94px;
 }
 .workers {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  padding-left: 215px;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  padding-top: 94px;
   text-align: center;
+  justify-content: right;
+  margin: 0 auto;
 }
 .img-shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -271,4 +288,11 @@
 }
 .workers-text {
   text-align: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.border-img {
+  border-bottom: 1px solid var(--border-color);
 }
