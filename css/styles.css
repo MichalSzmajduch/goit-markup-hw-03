@@ -28,6 +28,7 @@
   --logo-color: #2196f3;
   --secondary-bacground-color: #2f303a;
   --border-color: #ececec;
+  --team-background: #f5f4fa;
 }
 
 .header-logo {
@@ -125,6 +126,7 @@
   font-size: 18px;
   line-height: 2;
 }
+
 .portfolio-description {
   font-weight: 400;
   font-size: 16px;
@@ -139,32 +141,89 @@
 .logo-box {
   display: flex;
   flex-direction: row;
-  margin-top: 24px;
+  justify-content: center;
+}
+.logo-div {
   box-sizing: content-box 145px 31px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  margin-right: 93px;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
 }
 .header-box {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: auto;
   height: 80px;
   border-bottom: solid 1px var(--border-color);
 }
 .nav-box {
   display: flex;
   flex-direction: row;
-  margin-left: 93px;
-  box-sizing: content-box 261px 61px;
-  gap: 46px;
+  width: 254px;
+  height: 16px;
   list-style-type: none;
-  margin-top: 32px;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  margin: 0;
+}
+.tel-box {
+  width: 110px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  margin: 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.space-nav {
+  margin-right: 46px;
 }
 .contact-box {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 50px;
+  justify-content: center;
+  flex-direction: row;
   list-style-type: none;
-  box-sizing: content-box 295px 16px;
-  padding-left: 371px;
-  margin-top: 32px;
+  padding-left: 0px;
+}
+.mail-box {
+  width: 135px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  margin: 0px 50px 0px 371px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.button-wszystkie {
+  width: 121px;
+  height: 38px;
+}
+.button-strony {
+  width: 93px;
+  height: 38px;
+}
+.button-aplikacje {
+  width: 114px;
+  height: 38px;
+}
+.button-dizajn {
+  width: 93px;
+  height: 38px;
+}
+.contact-space {
+  margin-right: 50px;
 }
 .button-index {
   width: 200px;
@@ -177,10 +236,12 @@
 .button-box {
   display: flex;
   width: 572px;
-  height: 54px;
+  height: 38px;
   margin: auto;
   list-style-type: none;
   gap: 8px;
+  margin-bottom: 50px;
+  padding-left: 0px;
 }
 
 .main-container {
@@ -189,18 +250,18 @@
   margin: 174px 215px 346px 215px;
 }
 .img-main-box {
+  padding-left: 0px;
   display: flex;
   flex-direction: row;
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  flex-basis: calc((100% - 30px) / 3);
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .footer-box {
   display: block flex;
   flex-direction: row;
-  margin-top: 94px;
 }
 .logo-box-footer {
   display: flex;
@@ -209,12 +270,6 @@
   margin: auto;
 }
 
-.main-box {
-  display: flex;
-  box-sizing: content-box 1170px 1360px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
 .footer-link {
   list-style-type: none;
   display: flex;
@@ -248,6 +303,8 @@
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 94px;
+  margin-bottom: 0px;
 }
 .description-box {
   width: 270px;
@@ -255,30 +312,28 @@
   margin: 0 auto;
 }
 .sec-title {
+  display: flex;
   margin: 0 auto;
   text-align: center;
-  padding-top: 94px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  justify-content: center;
 }
 .img-work {
   list-style-type: none;
   display: flex;
   gap: 30px;
   margin: 0 auto;
-  padding-top: 94px;
   justify-content: right;
-  width: 1170px;
-  height: 386px;
 }
 .th-title {
   margin: 0 auto;
   text-align: center;
-  padding-top: 94px;
 }
 .workers {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  padding-top: 94px;
   text-align: center;
   justify-content: right;
   margin: 0 auto;
@@ -293,8 +348,27 @@
   text-align: center;
 }
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .border-img {
   border-bottom: 1px solid var(--border-color);
+}
+.main-section {
+  padding-top: 0px;
+}
+.title-margin {
+  margin-bottom: 50px;
+  padding-top: 0px;
+}
+.job-container {
+  padding-bottom: 0px;
+  width: 1170px;
+  height: 386px;
+}
+.main-space {
+  padding-top: 0px;
+}
+.team-color-background {
+  background-color: var(--team-background);
 }
