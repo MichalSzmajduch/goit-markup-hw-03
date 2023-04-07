@@ -76,12 +76,15 @@
 .fourth-header {
   font-size: 14px;
   line-height: 1.17;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .description {
   font-weight: 400;
   font-size: 14px;
   color: var(--second-text-color);
   line-height: 1.71;
+  margin-top: 10px;
 }
 .secondary-header {
   font-size: 36px;
@@ -90,12 +93,17 @@
 .third-header {
   font-size: 16px;
   line-height: 1.17;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .job-role {
   font-weight: 400;
   font-size: 16px;
   color: var(--second-text-color);
   line-height: 1.17;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
 }
 .footer-background {
   background-color: var(--secondary-bacground-color);
@@ -125,6 +133,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .portfolio-description {
@@ -132,6 +143,10 @@
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-text-color);
+  padding-left: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .container {
@@ -145,8 +160,6 @@
 }
 .logo-div {
   box-sizing: content-box 145px 31px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   padding-left: 0px;
   margin-right: 93px;
   flex-direction: row;
@@ -158,31 +171,39 @@
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  height: 80px;
-  border-bottom: solid 1px var(--border-color);
+
+  border: solid 1px var(--border-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav-padding {
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
 .nav-box {
   display: flex;
   flex-direction: row;
   width: 254px;
-  height: 16px;
+
   list-style-type: none;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
+
   padding-left: 0px;
   margin: 0;
 }
 .tel-box {
   width: 110px;
-  height: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 0px;
   margin: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
 
 .space-nav {
@@ -191,44 +212,42 @@
 .contact-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   list-style-type: none;
   padding-left: 0px;
+  margin: 0;
 }
 .mail-box {
   width: 135px;
-  height: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 0px;
   margin: 0px 50px 0px 371px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
 .button-wszystkie {
   width: 121px;
-  height: 38px;
 }
 .button-strony {
   width: 93px;
-  height: 38px;
 }
 .button-aplikacje {
   width: 114px;
-  height: 38px;
 }
 .button-dizajn {
   width: 93px;
-  height: 38px;
 }
 .contact-space {
   margin-right: 50px;
 }
 .button-index {
   width: 200px;
-  height: 50px;
-  margin: 0 auto;
+
+  margin-top: 30px;
   display: flex block;
   justify-content: center;
 }
@@ -236,7 +255,7 @@
 .button-box {
   display: flex;
   width: 572px;
-  height: 38px;
+
   margin: auto;
   list-style-type: none;
   gap: 8px;
@@ -258,16 +277,18 @@
   justify-content: center;
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
+  margin: 0px;
 }
 .footer-box {
   display: block flex;
   flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-box-footer {
   display: flex;
   flex-direction: row;
-  padding-top: 60px;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
 .footer-link {
@@ -275,25 +296,24 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 0px;
   padding-left: 0px;
-  margin: auto;
 }
 .main-box-index {
   display: block flex;
-  height: 600px;
+
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-text-index {
   width: 696px;
-  height: 120px;
+
   display: block;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 150px;
   text-align: center;
 }
 .index-description {
@@ -302,13 +322,14 @@
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  margin: 0 auto;
+  padding-left: 0px;
   margin-top: 94px;
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .description-box {
   width: 270px;
-  height: 101px;
+
   margin: 0 auto;
 }
 .sec-title {
@@ -324,7 +345,7 @@
   display: flex;
   gap: 30px;
   margin: 0 auto;
-  justify-content: right;
+  padding-left: 0px;
 }
 .th-title {
   margin: 0 auto;
@@ -333,10 +354,10 @@
 .workers {
   list-style-type: none;
   display: flex;
-  gap: 30px;
   text-align: center;
   justify-content: right;
   margin: 0 auto;
+  padding-left: 0px;
 }
 .img-shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -353,22 +374,33 @@
 }
 .border-img {
   border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+.vertical {
+  display: block;
 }
 .main-section {
   padding-top: 0px;
 }
 .title-margin {
   margin-bottom: 50px;
-  padding-top: 0px;
 }
 .job-container {
-  padding-bottom: 0px;
   width: 1170px;
-  height: 386px;
 }
 .main-space {
   padding-top: 0px;
 }
 .team-color-background {
   background-color: var(--team-background);
+}
+.margin-img {
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+.margin-footer-link {
+  margin-bottom: 9px;
 }
